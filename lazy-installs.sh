@@ -1,7 +1,7 @@
 #!/bin/bash
  
 sudo apt update -y && sudo apt upgrade -y
-sudo apt install git google-chrome-stable chrome-gnome-shell remmina steam-installer lutris -y
+sudo apt install google-chrome-stable chrome-gnome-shell remmina steam-installer lutris -y
 sudo apt install gnome-tweaks qbittorrent -y
 sudo apt install virtualbox virtualbox-dkms virtualbox-ext-pack virtualbox-guest-additions-iso -y
 sudo apt install vlc lollypop -y
