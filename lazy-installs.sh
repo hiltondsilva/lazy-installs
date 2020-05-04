@@ -39,4 +39,19 @@ echo ------------------------------------------------------------------
 echo -------------Teamviewer Installed Successfully!! -----------------
 echo ------------------------------------------------------------------
 
+#flameshot
+rm /tmp/flameshot_0.6.0_bionic_x86_64.deb
+
+wget https://github.com/lupoDharkael/flameshot/releases/download/v0.6.0/flameshot_0.6.0_bionic_x86_64.deb /tmp/flameshot_0.6.0_bionic_x86_64.deb
+sudo dpkg -i /tmp/flameshot_0.6.0_bionic_x86_64.deb
+sudo apt install -f y
+
+rm /tmp/flameshot_0.6.0_bionic_x86_64.deb
+
+sudo apt update -y
+
+echo ------------------------------------------------------------------
+echo -------------Flameshot Installed Successfully!!-------------------
+echo ------------------------------------------------------------------
+
 exit
