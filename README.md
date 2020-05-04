@@ -17,3 +17,4 @@ virtualbox-guest-additions-iso
 vlc 
 lollypop
 ulauncher
+flameshot
