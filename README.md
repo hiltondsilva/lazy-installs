@@ -1,6 +1,6 @@
 # lazy-installs
-A simple script that apt-gets these softwares.
-
+## A simple script that apt-gets these softwares.
+```
 google-chrome-stable
 chrome-gnome-shell 
 remmina steam-installer
@@ -20,10 +20,6 @@ neofetch
 libglib2.0-dev
 audacity
 kdenlive
-go-mtpfs
-libmtp
-mtpfs 
-mtp-tools
 libgtkglext1 
 lib32z1
 ulauncher
@@ -32,3 +28,4 @@ anydesk
 crossover
 komorebi
 gstreamer1.0-libav
+```
