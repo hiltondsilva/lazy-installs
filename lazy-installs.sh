@@ -70,14 +70,20 @@ echo ----------------- CrossOver Installed Successfully ---------------
 echo ------------------------------------------------------------------
 
 
-echo ------------------------------------------------------------------
-echo ------------------ Download Git Programs ------------- -----------
-echo ------------------------------------------------------------------
 
-cd /opt/
-sudo git clone https://github.com/PRATAP-KUMAR/focalgdm3.git
-sudo git clone https://github.com/cheesecakeufo/komorebi.git
 
+#Komorebi
+
+rm /tmp/komorebi-2.1-64-bit.deb
+
+wget https://github.com/cheesecakeufo/komorebi/releases/download/v2.1/komorebi-2.1-64-bit.deb -O /tmp/komorebi-2.1-64-bit.deb
+sudo dpkg -i /tmp/komorebi-2.1-64-bit.deb
+
+rm /tmp/komorebi-2.1-64-bit.deb
+
+echo ------------------------------------------------------------------
+echo ----------------- Komorebi Installed Successfully ---------------
+echo ------------------------------------------------------------------
 
 sudo apt autoremove -y
 exit
