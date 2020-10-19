@@ -30,3 +30,4 @@ ulauncher
 teamviewer
 anydesk
 crossover
+komorebi
