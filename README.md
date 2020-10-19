@@ -31,3 +31,4 @@ teamviewer
 anydesk
 crossover
 komorebi
+gstreamer1.0-libav
