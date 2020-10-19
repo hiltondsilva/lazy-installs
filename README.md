@@ -1,20 +1,32 @@
 # lazy-installs
-#this script includes the following softwares
+A simple script that apt-gets these softwares.
 
-google-chrome-stable 
+google-chrome-stable
 chrome-gnome-shell 
-remmina 
-steam-installer
-lutris
+remmina steam-installer
+lutris chromium-browser
 gnome-tweaks 
-anydesk 
-teamviewer 
-qbittorrent
-virtualbox 
-virtualbox-dkms 
-virtualbox-ext-pack 
-virtualbox-guest-additions-iso
+deluge 
 vlc 
-lollypop
-ulauncher
 flameshot
+virtualbox
+virtualbox-dkms
+virtualbox-ext-pack
+virtualbox-guest-additions-iso
+refind
+spotify-client
+htop
+neofetch
+libglib2.0-dev
+audacity
+kdenlive
+go-mtpfs
+libmtp
+mtpfs 
+mtp-tools
+libgtkglext1 
+lib32z1
+ulauncher
+teamviewer
+anydesk
+crossover
