@@ -1,13 +1,11 @@
 #!/bin/bash
  
 sudo apt update -y && sudo apt upgrade -y
-sudo apt install google-chrome-stable chrome-gnome-shell remmina steam-installer lutris -y
-sudo apt install gnome-tweaks qbittorrent -y
-sudo apt install virtualbox virtualbox-dkms virtualbox-ext-pack virtualbox-guest-additions-iso -y
-sudo apt install vlc lollypop -y
+sudo apt install google-chrome-stable chrome-gnome-shell remmina steam-installer lutris chromium-browser gnome-tweaks deluge vlc flameshot virtualbox
+virtualbox-dkms virtualbox-ext-pack virtualbox-guest-additions-iso refind spotify-client htop neofetch libglib2.0-dev audacity kdenlive go-mtpfs libmtp mtpfs mtp-tools -y
 
 echo ------------------------------------------------------------------
-echo ---------- Essential Installed Successfully!! --------------------
+echo ---------- Essentials Installed Successfully!! --------------------
 echo ------------------------------------------------------------------
 
 #Ulauncher
@@ -18,8 +16,6 @@ sudo dpkg -i /tmp/ulauncher_5.7.5_all.deb
 sudo apt install -f y
 
 rm /tmp/ulauncher_5.7.5_all.deb
-
-sudo apt update -y
 
 echo ------------------------------------------------------------------
 echo ---------- --Ulauncher Installed Successfully!! ------------------
@@ -39,19 +35,43 @@ echo ------------------------------------------------------------------
 echo -------------Teamviewer Installed Successfully!! -----------------
 echo ------------------------------------------------------------------
 
-#flameshot
-rm /tmp/flameshot_0.6.0_bionic_x86_64.deb
+https://download.anydesk.com/linux/anydesk_6.0.1-1_amd64.deb
 
-wget https://github.com/lupoDharkael/flameshot/releases/download/v0.6.0/flameshot_0.6.0_bionic_x86_64.deb /tmp/flameshot_0.6.0_bionic_x86_64.deb
-sudo dpkg -i /tmp/flameshot_0.6.0_bionic_x86_64.deb
-sudo apt install -f y
+#AnyDesk
 
-rm /tmp/flameshot_0.6.0_bionic_x86_64.deb
+rm /tmp/anydesk_6.0.1-1_amd64.deb
 
-sudo apt update -y
+wget https://download.anydesk.com/linux/anydesk_6.0.1-1_amd64.deb -O /tmp/anydesk_6.0.1-1_amd64.deb
+sudo dpkg -i /tmp/anydesk_6.0.1-1_amd64.deb
+
+rm /tmp/anydesk_6.0.1-1_amd64.deb
 
 echo ------------------------------------------------------------------
-echo -------------Flameshot Installed Successfully!!-------------------
+echo -------------AnyDesk Installed Successfully!! --------------------
 echo ------------------------------------------------------------------
 
+#Cross Over
+
+rm /tmp/crossover_20.0.0-1.deb
+
+wget https://media.codeweavers.com/pub/crossover/cxlinux/demo/crossover_20.0.0-1.deb -O /tmp/crossover_20.0.0-1.deb
+sudo dpkg -i /tmp/crossover_20.0.0-1.deb
+
+rm /tmp/crossover_20.0.0-1.deb
+
+echo ------------------------------------------------------------------
+echo -------------CrossOver Installed Successfully!! ------------------
+echo ------------------------------------------------------------------
+
+
+echo ------------------------------------------------------------------
+echo -------------Download Git Programs------------- ------------------
+echo ------------------------------------------------------------------
+
+cd /opt/
+sudo git clone https://github.com/PRATAP-KUMAR/focalgdm3.git
+sudo git clone https://github.com/cheesecakeufo/komorebi.git
+
+
+sudo apt autoremove
 exit
