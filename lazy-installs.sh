@@ -1,5 +1,9 @@
 #!/bin/bash
  
+echo ------------------------------------------------------------------
+echo ------------------- Adding Repositories --------------------------
+echo ------------------------------------------------------------------ 
+
 curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt update -y && sudo apt upgrade -y
@@ -8,7 +12,7 @@ virtualbox-dkms virtualbox-ext-pack virtualbox-guest-additions-iso refind spotif
 libgtkglext1 lib32z1 -y
 
 echo ------------------------------------------------------------------
-echo ---------- Essentials Installed Successfully!! --------------------
+echo ---------- Essentials Installed Successfully ---------------------
 echo ------------------------------------------------------------------
 
 #Ulauncher
@@ -21,7 +25,7 @@ sudo apt install -f y
 rm /tmp/ulauncher_5.7.5_all.deb
 
 echo ------------------------------------------------------------------
-echo ---------- --Ulauncher Installed Successfully!! ------------------
+echo ------------ Ulauncher Installed Successfully --------------------
 echo ------------------------------------------------------------------
 
 #Teamviewer
@@ -35,7 +39,7 @@ sudo apt --fix-broken install -y
 rm /tmp/teamviewer_amd64.deb 
 
 echo ------------------------------------------------------------------
-echo -------------Teamviewer Installed Successfully!! -----------------
+echo ------------- Teamviewer Installed Successfully ------------------
 echo ------------------------------------------------------------------
 
 https://download.anydesk.com/linux/anydesk_6.0.1-1_amd64.deb
@@ -50,7 +54,7 @@ sudo dpkg -i /tmp/anydesk_6.0.1-1_amd64.deb
 rm /tmp/anydesk_6.0.1-1_amd64.deb
 
 echo ------------------------------------------------------------------
-echo -------------AnyDesk Installed Successfully!! --------------------
+echo ---------------- AnyDesk Installed Successfully ------------------
 echo ------------------------------------------------------------------
 
 #Cross Over
@@ -63,12 +67,12 @@ sudo dpkg -i /tmp/crossover_20.0.0-1.deb
 rm /tmp/crossover_20.0.0-1.deb
 
 echo ------------------------------------------------------------------
-echo -------------CrossOver Installed Successfully!! ------------------
+echo ----------------- CrossOver Installed Successfully ---------------
 echo ------------------------------------------------------------------
 
 
 echo ------------------------------------------------------------------
-echo -------------Download Git Programs------------- ------------------
+echo ------------------ Download Git Programs ------------- -----------
 echo ------------------------------------------------------------------
 
 cd /opt/
@@ -76,5 +80,5 @@ sudo git clone https://github.com/PRATAP-KUMAR/focalgdm3.git
 sudo git clone https://github.com/cheesecakeufo/komorebi.git
 
 
-sudo apt autoremove
+sudo apt autoremove -y
 exit
