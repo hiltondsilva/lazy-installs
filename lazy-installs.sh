@@ -1,5 +1,7 @@
 #!/bin/bash
  
+curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt update -y && sudo apt upgrade -y
 sudo apt install google-chrome-stable chrome-gnome-shell remmina steam-installer lutris chromium-browser gnome-tweaks deluge vlc flameshot virtualbox
 virtualbox-dkms virtualbox-ext-pack virtualbox-guest-additions-iso refind spotify-client htop neofetch libglib2.0-dev audacity kdenlive go-mtpfs libmtp mtpfs mtp-tools -y
