@@ -9,7 +9,7 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sou
 sudo apt update -y && sudo apt upgrade -y
 sudo apt install google-chrome-stable chrome-gnome-shell remmina steam-installer lutris chromium-browser gnome-tweaks deluge vlc flameshot virtualbox
 virtualbox-dkms virtualbox-ext-pack virtualbox-guest-additions-iso refind spotify-client htop neofetch libglib2.0-dev audacity kdenlive libgtkglext1 lib32z1 
-gstreamer1.0-libav exfat-fuse exfat-utils-y
+gstreamer1.0-libav exfat-fuse exfat-utils telegram-desktop -y
 
 echo ------------------------------------------------------------------
 echo ---------- Essentials Installed Successfully ---------------------
@@ -57,7 +57,7 @@ echo ------------------------------------------------------------------
 echo ---------------- AnyDesk Installed Successfully ------------------
 echo ------------------------------------------------------------------
 
-#Cross Over
+#CrossOver
 
 rm /tmp/crossover_20.0.0-1.deb
 
@@ -84,6 +84,19 @@ rm /tmp/komorebi-2.1-64-bit.deb
 
 echo ------------------------------------------------------------------
 echo ----------------- Komorebi Installed Successfully ---------------
+echo ------------------------------------------------------------------
+
+#Viber
+
+rm /tmp/viber.deb
+
+wget https://download.cdn.viber.com/cdn/desktop/Linux/viber.deb -O /tmp/viber.deb
+sudo dpkg -i /tmp/viber.deb
+
+rm /tmp/viber.deb
+
+echo ------------------------------------------------------------------
+echo ----------------- Viber Installed Successfully -------------------
 echo ------------------------------------------------------------------
 
 sudo apt autoremove -y
