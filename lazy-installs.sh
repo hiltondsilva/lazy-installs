@@ -9,7 +9,7 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sou
 sudo apt update -y && sudo apt upgrade -y
 sudo apt install google-chrome-stable chrome-gnome-shell remmina steam-installer lutris chromium-browser gnome-tweaks deluge vlc flameshot virtualbox
 virtualbox-dkms virtualbox-ext-pack virtualbox-guest-additions-iso refind spotify-client htop neofetch libglib2.0-dev audacity kdenlive libgtkglext1 lib32z1 
-gstreamer1.0-libav exfat-fuse exfat-utils telegram-desktop gstreamer1.0-plugins-ugly -y
+gstreamer1.0-libav exfat-fuse exfat-utils telegram-desktop gstreamer1.0-plugins-ugly converseen -y
 
 echo ------------------------------------------------------------------
 echo ---------- Essentials Installed Successfully ---------------------
